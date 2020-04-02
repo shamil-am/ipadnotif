@@ -1,0 +1,66 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.rotate {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+section.notification {
+  background-color: #b16d6d;
+}
+
+section.notification .container-fluid .row .col-3.leftside {
+  padding-top: 5%;
+}
+
+section.notification .container-fluid .row .col-3.leftside a {
+  color: #000;
+}
+
+section.notification .container-fluid .row .col-3.leftside .left-header {
+  margin-bottom: 20%;
+}
+
+section.notification .container-fluid .row .col-3.leftside .play-music {
+  margin-bottom: 5%;
+}
+
+section.notification .container-fluid .row .col-3.leftside .music-volume {
+  margin-bottom: 5%;
+}
+
+section.notification .container-fluid .row .col-6.middleside .close-btn {
+  margin-bottom: 10%;
+}
+
+section.notification .container-fluid .row .col-6.middleside .close-btn i {
+  font-size: 32px;
+}
+
+section.notification .container-fluid .row .col-6.middleside .buttons input[type="checkbox"] {
+  display: none;
+}
+
+section.notification .container-fluid .row .col-6.middleside .buttons label {
+  background-color: #b8b1b1b9;
+  height: 50px;
+  width: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+}
+
+section.notification .container-fluid .row .col-6.middleside .buttons input[type="checkbox"]:checked + label {
+  background-color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
