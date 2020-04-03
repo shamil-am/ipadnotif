@@ -6,11 +6,20 @@
 *{
     box-sizing: border-box;
 }
+a:hover{
+    text-decoration: none;
+}
 .rotate{
     transform: rotateY(180deg);
 }
+$main-color: #9c9c9cd7;
+    
+
 section.notification{
-    background-color: #b16d6d;
+    max-width: 768px;
+    margin: 0 auto ;
+    background: rgb(0,33,36);
+    background: linear-gradient(90deg, rgba(0,33,36,0.8155637254901961) 0%, rgba(171,70,70,0.8127626050420168) 66%, rgba(0,212,255,0.804359243697479) 100%);
     .container-fluid{
         .row{
             .col-3.leftside{
@@ -20,9 +29,20 @@ section.notification{
                 }
                 .left-header{
                     margin-bottom: 20%;
+                    h6{
+                        color: #fff;
+                    }
                 }
                 .play-music{
-                    margin-bottom: 5%;
+                    margin-bottom: 10%;
+                    a{
+                        &:first-child{
+                            color: $main-color;
+                        }
+                        &:last-child{
+                            color: $main-color;
+                        }
+                    }
                 }
                 .music-volume{
                     margin-bottom: 5%;
@@ -30,17 +50,18 @@ section.notification{
             }
             .col-6.middleside{
                 .close-btn{
-                    margin-bottom: 10%;
+                    margin-bottom: 5%;
                     i{
                         font-size: 32px;
                     }
                 }
                 .buttons{
+                    margin-bottom: 5%;
                     input[type="checkbox"]{
                         display:none;
                     }
                     label{
-                        background-color: #b8b1b1b9;
+                        background-color: $main-color;
                         height: 50px;
                         width: 50px;
                         display: flex;
@@ -51,6 +72,51 @@ section.notification{
                     input[type="checkbox"]:checked + label{
                         background-color: #fff;
 
+                    }
+                }
+                .airdrop{
+                    text-align: center;
+                    a{
+                        color: #000;
+                        display: inline-block;
+                        padding: 5px 120px;
+                        background-color: $main-color;
+                        border-radius: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            font-size: 30px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+
+            }
+            .col-3.rightside{
+                padding-top: 10%;
+                .brightnes{
+                    margin-bottom: 15%;
+                    a{
+                        color: #000;
+                        &:first-child{
+                            font-size: 12px;
+                        }
+                    }
+                    
+                }
+                .camera{
+                    display: flex;
+                    justify-content: space-evenly;
+                    align-items: center;
+                    a{
+                        color: #000;
+                        display: inline-block;
+                        font-size: 30px;
+                        background-color: $main-color;
+                        border-radius: 10px;
+                        width: 70px;
+                        text-align: center;
                     }
                 }
             }
