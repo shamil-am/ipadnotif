@@ -13,6 +13,9 @@ a:hover{
     transform: rotateY(180deg);
 }
 $main-color: #9c9c9cd7;
+label,input{
+    cursor: pointer;
+}
     
 
 section.notification{
@@ -46,13 +49,19 @@ section.notification{
                 }
                 .music-volume{
                     margin-bottom: 5%;
+                    input{
+                        margin: 0 10px;
+                    }
                 }
             }
             .col-6.middleside{
                 .close-btn{
                     margin-bottom: 5%;
-                    i{
-                        font-size: 32px;
+                    a{
+                        color: #000;
+                        i{
+                            font-size: 32px;
+                        }
                     }
                 }
                 .buttons{
@@ -68,10 +77,16 @@ section.notification{
                         justify-content: center;
                         align-items: center;
                         border-radius: 50%;
+                        transition: all .3s;
+                        i{
+                            transition: all .3s;
+                        }
                     }
                     input[type="checkbox"]:checked + label{
                         background-color: #fff;
-
+                    }
+                    input[type="checkbox"]:checked + label i{
+                        font-size: 24px;
                     }
                 }
                 .airdrop{
@@ -97,6 +112,9 @@ section.notification{
                 padding-top: 10%;
                 .brightnes{
                     margin-bottom: 15%;
+                    input{
+                        margin: 0 10px;
+                    }
                     a{
                         color: #000;
                         &:first-child{

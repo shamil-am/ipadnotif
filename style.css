@@ -12,6 +12,10 @@ a:hover {
           transform: rotateY(180deg);
 }
 
+label, input {
+  cursor: pointer;
+}
+
 section.notification {
   max-width: 768px;
   margin: 0 auto;
@@ -52,11 +56,19 @@ section.notification .container-fluid .row .col-3.leftside .music-volume {
   margin-bottom: 5%;
 }
 
+section.notification .container-fluid .row .col-3.leftside .music-volume input {
+  margin: 0 10px;
+}
+
 section.notification .container-fluid .row .col-6.middleside .close-btn {
   margin-bottom: 5%;
 }
 
-section.notification .container-fluid .row .col-6.middleside .close-btn i {
+section.notification .container-fluid .row .col-6.middleside .close-btn a {
+  color: #000;
+}
+
+section.notification .container-fluid .row .col-6.middleside .close-btn a i {
   font-size: 32px;
 }
 
@@ -82,10 +94,21 @@ section.notification .container-fluid .row .col-6.middleside .buttons label {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 50%;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+section.notification .container-fluid .row .col-6.middleside .buttons label i {
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 section.notification .container-fluid .row .col-6.middleside .buttons input[type="checkbox"]:checked + label {
   background-color: #fff;
+}
+
+section.notification .container-fluid .row .col-6.middleside .buttons input[type="checkbox"]:checked + label i {
+  font-size: 24px;
 }
 
 section.notification .container-fluid .row .col-6.middleside .airdrop {
@@ -120,6 +143,10 @@ section.notification .container-fluid .row .col-3.rightside {
 
 section.notification .container-fluid .row .col-3.rightside .brightnes {
   margin-bottom: 15%;
+}
+
+section.notification .container-fluid .row .col-3.rightside .brightnes input {
+  margin: 0 10px;
 }
 
 section.notification .container-fluid .row .col-3.rightside .brightnes a {
