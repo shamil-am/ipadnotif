@@ -24,6 +24,11 @@ section.notification {
   background: linear-gradient(90deg, rgba(0, 33, 36, 0.815564) 0%, rgba(171, 70, 70, 0.812763) 66%, rgba(0, 212, 255, 0.804359) 100%);
 }
 
+section.notification .container-fluid {
+  -webkit-box-shadow: 14px 14px 25px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 14px 14px 25px 0px rgba(0, 0, 0, 0.75);
+}
+
 section.notification .container-fluid .row .col-3.leftside {
   padding-top: 5%;
 }
