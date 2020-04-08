@@ -87,10 +87,11 @@ section.notification{
                     }
                     input[type="checkbox"]:checked + label{
                         background-color: #fff;
+                        & i{
+                            font-size: 24px;
+                        }
                     }
-                    input[type="checkbox"]:checked + label i{
-                        font-size: 24px;
-                    }
+                   
                 }
                 .airdrop{
                     text-align: center;
